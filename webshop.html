@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/webshop.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>WebShop</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- ####################### Header ####################### -->
+      <header></header>
+
+      <!-- ####################### WebShop ####################### -->
+      <div class="webshop-inner" style="padding-top: 100px">
+        <div class="button-container">
+          <button id="two-columns-button">2</button>
+          <button id="three-columns-button">3</button>
+          <button id="four-columns-button">4</button>
+        </div>
+        <div class="image-container">
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_SUMMER_oakley_4358_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 1</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_SUMMER_jacket0528_c84a806b-ae3f-481f-92ed-1bb4a36a08c1_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 2</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_SUMMER_jacket0552_4611b5c3-1036-4506-a2f5-ef34299ed631_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 1</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_SUMMER_cap_4016-1_4dffbfb5-b1b9-4425-b0d4-bc47de26f248_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 2</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_SUMMER_jacket0462_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 2</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_SUMMER_jacket0502_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 1</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/MVHBN_16-1_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 2</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/MVHBN_95-1_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 1</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_SUMMER_shirt_0654_2a350fdd-69ce-45d0-9a93-532573fbc2ea_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 1</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_cap_7734_dea71a72-6c2b-4c58-a550-90a4a711a476_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 2</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_SUMMER_jacket0581_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 1</p>
+          </div>
+          <div class="image-item">
+            <img
+              src="./images/webshop/Palace_2023_jkt_4898-1_200x200_crop_center@2x.jpg"
+              alt=""
+            />
+            <p class="product-name">상품명 2</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ####################### Footer ####################### -->
+      <footer></footer>
+    </div>
+    <script>
+      $(function () {
+        $("header").load("header.html");
+        $("footer").load("footer.html");
+
+        document
+          .getElementById("two-columns-button")
+          .addEventListener("click", function () {
+            var imageContainer = document.querySelector(".image-container");
+            imageContainer.classList.remove("three-columns", "four-columns");
+            imageContainer.classList.add("two-columns");
+          });
+
+        document
+          .getElementById("three-columns-button")
+          .addEventListener("click", function () {
+            var imageContainer = document.querySelector(".image-container");
+            imageContainer.classList.remove("two-columns", "four-columns");
+            imageContainer.classList.add("three-columns");
+          });
+
+        document
+          .getElementById("four-columns-button")
+          .addEventListener("click", function () {
+            var imageContainer = document.querySelector(".image-container");
+            imageContainer.classList.remove("two-columns", "three-columns");
+            imageContainer.classList.add("four-columns");
+          });
+      });
+    </script>
+  </body>
+</html>

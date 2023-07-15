@@ -1,0 +1,47 @@
+.advice-evisu {
+  width: 100vw;
+}
+
+.evisu-contents {
+  width: 93.75vw;
+  margin: auto;
+  padding-top: 82px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.04vh;
+}
+
+.evisu-con-title h3 {
+  margin: 70px 0 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.evisu-con-title ul {
+  font-size: 1.4rem;
+}
+
+.evisu-con-title p {
+  font-size: 1.4rem;
+  padding-bottom: 3px;
+}
+
+.evisu-con-title ul {
+  margin-bottom: 10px;
+}
+
+.evisu-con-title li {
+  list-style: disc;
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.evisu-con-img {
+  width: 63.84vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.evisu-con-img img {
+  width: 30.25vw;
+}

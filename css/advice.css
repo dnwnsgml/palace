@@ -1,0 +1,29 @@
+.advice-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100vw;
+  height: 912px;
+  padding-top: 80px;
+}
+
+.advice-video iframe {
+  pointer-events: none;
+}
+
+.advice-container .advice-video,
+.advice-container .advice-img {
+  width: 100%;
+  height: 100%;
+}
+
+.advice-container .advice-video:hover,
+.advice-container .advice-img:hover {
+  cursor: pointer;
+}
+
+.advice-container .advice-video iframe,
+.advice-container .advice-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
