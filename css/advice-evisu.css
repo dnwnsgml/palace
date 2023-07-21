@@ -4,11 +4,11 @@
 
 .evisu-contents {
   width: 93.75vw;
+  height: 912px;
   margin: auto;
   padding-top: 82px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1.04vh;
 }
 
 .evisu-con-title h3 {
@@ -37,11 +37,47 @@
 }
 
 .evisu-con-img {
-  width: 63.84vw;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  top: 70px;
+  right: 1149px;
 }
 
-.evisu-con-img img {
-  width: 30.25vw;
+.image-gallery img {
+  display: block;
+  width: 50.84vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-gallery img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(150, 150, 150, 0);
+  color: #6d6d6d;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  right: 38px;
+  top: 331px;
+}
+
+.next-button {
+  top: 331px;
+  left: 1010px;
 }

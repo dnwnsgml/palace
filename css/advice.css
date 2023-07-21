@@ -10,19 +10,19 @@
   pointer-events: none;
 }
 
-.advice-container .advice-video,
-.advice-container .advice-img {
+.advice-video,
+.advice-img {
   width: 100%;
   height: 100%;
 }
 
-.advice-container .advice-video:hover,
-.advice-container .advice-img:hover {
+.advice-video:hover,
+.advice-img:hover {
   cursor: pointer;
 }
 
-.advice-container .advice-video iframe,
-.advice-container .advice-img img {
+.advice-video iframe,
+.advice-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
