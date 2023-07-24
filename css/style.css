@@ -64,6 +64,10 @@ header {
   color: #222;
 }
 
+.mb-login {
+  display: none;
+}
+
 .menu-bar {
   position: absolute;
   top: 0;
@@ -105,7 +109,7 @@ header {
 
 /* ============= Section: main-img =============== */
 #main-img {
-  padding-top: 100px;
+  padding-top: 80px;
   width: 100%;
 }
 
@@ -115,7 +119,7 @@ header {
 
 #main-video iframe {
   width: 100%;
-  height: 90vh;
+  height: 92vh;
 }
 
 /* ============= Section: shop,webshop =============== */
@@ -500,6 +504,49 @@ footer {
     display: none;
   }
 
+  .logo-icon.clicked {
+    margin-left: 0px;
+  }
+
+  .mb-login {
+    display: block;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mb-login li {
+    float: left;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    background-color: rgb(230, 230, 230);
+    padding: 0.8rem 1.45rem;
+    margin-right: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .menu-bar {
+    left: -868px;
+    width: 100vw;
+  }
+
+  .menu {
+    text-align: center;
+    top: 42%;
+    left: 50%;
+  }
+
+  .menu li {
+    font-size: 1.6rem;
+    padding: 7px;
+  }
+
+  .submenu {
+    padding: 10px;
+  }
+
   #main-video iframe {
     width: 100%;
     height: 45.4vh;
@@ -546,7 +593,7 @@ footer {
     font-style: italic;
   }
 
-  footer {
+  .footer-inner {
     display: none;
   }
 
@@ -578,6 +625,83 @@ footer {
   .mo-footer-b li {
     padding: 5%;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #main-img {
+    padding-top: 65px;
+  }
+
+  .logo-font img {
+    width: 130px;
+  }
+
+  .logo-icon img {
+    width: 42px;
+  }
+
+  .mb-title,
+  .mo-footer-t li,
+  .mo-footer-b li {
+    font-size: 1.2rem;
+  }
+
+  #main-video iframe {
+    width: 100%;
+    height: 40.5vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #main-img {
+    padding-top: 60px;
+  }
+
+  #main-video iframe {
+    width: 100%;
+    height: 32vh;
+  }
+
+  .menu {
+    top: 48%;
+  }
+
+  .logo-font img {
+    width: 104px;
+  }
+
+  .logo-icon img {
+    width: 37px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu {
+    top: 48%;
+  }
+
+  .menu li {
+    font-size: 1.4rem;
+  }
+
+  #main-img {
+    padding-top: 60px;
+  }
+
+  #main-video iframe {
+    width: 100%;
+    height: 25.8vh;
+  }
+
+  .mb-title,
+  .mo-footer-t li,
+  .mo-footer-b li {
+    font-size: 1rem;
+  }
+
+  .mb-title {
+    text-align: center;
   }
 }
